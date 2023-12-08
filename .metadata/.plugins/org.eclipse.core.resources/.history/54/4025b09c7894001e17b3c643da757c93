@@ -1,0 +1,86 @@
+package com.work.model;
+
+public class PaymentDetails {
+
+	private String paymentMethod;
+	private String status;
+	private String paymentid;
+	private String razorpaymentLinkId;
+	private String razorpaymentLinkReferenceId;
+	private String razorpaymentLinkStatus;
+	private String razorpaymentId;
+	
+	public PaymentDetails() {
+		
+	}
+
+	public PaymentDetails(String paymentMethod, String status, String paymentid, String razorpaymentLinkId,
+			String razorpaymentLinkReferenceId, String razorpaymentLinkStatus, String razorpaymentId) {
+		super();
+		this.paymentMethod = paymentMethod;
+		this.status = status;
+		this.paymentid = paymentid;
+		this.razorpaymentLinkId = razorpaymentLinkId;
+		this.razorpaymentLinkReferenceId = razorpaymentLinkReferenceId;
+		this.razorpaymentLinkStatus = razorpaymentLinkStatus;
+		this.razorpaymentId = razorpaymentId;
+	}
+
+	public String getPaymentMethod() {
+		return paymentMethod;
+	}
+
+	public void setPaymentMethod(String paymentMethod) {
+		this.paymentMethod = paymentMethod;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public String getPaymentid() {
+		return paymentid;
+	}
+
+	public void setPaymentid(String paymentid) {
+		this.paymentid = paymentid;
+	}
+
+	public String getRazorpaymentLinkId() {
+		return razorpaymentLinkId;
+	}
+
+	public void setRazorpaymentLinkId(String razorpaymentLinkId) {
+		this.razorpaymentLinkId = razorpaymentLinkId;
+	}
+
+	public String getRazorpaymentLinkReferenceId() {
+		return razorpaymentLinkReferenceId;
+	}
+
+	public void setRazorpaymentLinkReferenceId(String razorpaymentLinkReferenceId) {
+		this.razorpaymentLinkReferenceId = razorpaymentLinkReferenceId;
+	}
+
+	public String getRazorpaymentLinkStatus() {
+		return razorpaymentLinkStatus;
+	}
+
+	public void setRazorpaymentLinkStatus(String razorpaymentLinkStatus) {
+		this.razorpaymentLinkStatus = razorpaymentLinkStatus;
+	}
+
+	public String getRazorpaymentId() {
+		return razorpaymentId;
+	}
+
+	public void setRazorpaymentId(String razorpaymentId) {
+		this.razorpaymentId = razorpaymentId;
+	}
+	
+	
+}

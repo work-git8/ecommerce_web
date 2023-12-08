@@ -1,0 +1,10 @@
+package com.work.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.work.model.Cart;
+
+public interface CartRepository extends JpaRepository<Cart, Long>{
+
+	
+}

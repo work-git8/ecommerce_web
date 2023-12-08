@@ -1,0 +1,13 @@
+package com.work.service;
+
+import com.work.exception.ProductException;
+import com.work.model.Rating;
+import com.work.model.User;
+import com.work.request.RatingRequest;
+
+public interface RatingService {
+
+	public Rating creatRating(RatingRequest req, User user)throws ProductException;
+	
+	
+}

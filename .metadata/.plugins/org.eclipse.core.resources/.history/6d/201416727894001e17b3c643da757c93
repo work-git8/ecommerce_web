@@ -1,0 +1,12 @@
+package com.work.model;
+
+public class PaymentDetails {
+
+	private String paymentMethod;
+	private String status;
+	private String paymentid;
+	private String razorpaymentLinkId;
+	private String razorpaymentLinkReferenceId;
+	private String razorpaymentLinkStatus;
+	private String razorpaymentId;
+}

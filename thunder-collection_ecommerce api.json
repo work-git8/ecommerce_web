@@ -1,0 +1,208 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "ecommerce api",
+    "dateExported": "2023-12-08T07:44:59.594Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "23a70c9e-2fa6-4a1b-b926-530c4d51f1f5",
+            "colId": "012c2899-9168-4c23-b3a3-4c37bc2951ba",
+            "containerId": "",
+            "name": "http://localhost:5454/auth/signup",
+            "url": "http://localhost:5454/auth/signup",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-12-08T06:06:37.351Z",
+            "modified": "2023-12-08T06:10:33.283Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"firstName\":\"Avik\",\n    \"lastName\":\"Saha\",\n    \"email\":\"avik@gmail.com\",\n    \"password\":1234\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "cf9f4433-672a-4678-b5df-11f49a4224c8",
+            "colId": "012c2899-9168-4c23-b3a3-4c37bc2951ba",
+            "containerId": "",
+            "name": "http://localhost:5454/auth/signin",
+            "url": "http://localhost:5454/auth/signin",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-12-08T06:10:20.141Z",
+            "modified": "2023-12-08T06:10:55.024Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"email\":\"avik@gmail.com\",\n    \"password\":1234\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1d989e1f-edee-422e-93cb-c4572ba6fc24",
+            "colId": "012c2899-9168-4c23-b3a3-4c37bc2951ba",
+            "containerId": "",
+            "name": "{{url}}api/users/profile",
+            "url": "{{url}}api/users/profile",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-12-08T06:17:56.422Z",
+            "modified": "2023-12-08T06:17:56.422Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{jwt}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "c4aa018f-a9ae-4111-99e0-cca71e471c7d",
+            "colId": "012c2899-9168-4c23-b3a3-4c37bc2951ba",
+            "containerId": "",
+            "name": "{{url}}api/admin/products/",
+            "url": "{{url}}api/admin/products/2/delete",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-12-08T06:54:10.344Z",
+            "modified": "2023-12-08T07:05:13.498Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"imageUrl\": \"https://rukminim1.flixcart.com/image/612/612/k4d27ww0/shirt/q/w/t/l-el024-el-senor-original-imafnadnjp5pq6tg.jpeg?q=70\",\n  \"brand\": \"El Senor\",\n  \"title\": \"Men Regular Fit Solid Cut Away Collar Formal Shirt\",\n  \"color\": \"white\",\n  \"discountedPrice\": 299,\n  \"price\": 1299,\n  \"discountPersent\": 76,\n  \"size\": [\n    {\n      \"name\": \"S\",\n      \"quantity\": 20\n    },\n    {\n      \"name\": \"M\",\n      \"quantity\": 30\n    },\n    {\n      \"name\": \"L\",\n      \"quantity\": 50\n    }\n  ],\n  \"quantity\": 100,\n  \"topLevelCategory\": \"Men\",\n  \"secondLevelCategory\": \"Clothing\",\n  \"thirdLevelCategory\": \"shirt\",\n  \"description\": \"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style.\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{jwt}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "9ca3f9e0-1f1c-4869-8b6b-94f102f4c8b1",
+            "colId": "012c2899-9168-4c23-b3a3-4c37bc2951ba",
+            "containerId": "",
+            "name": "{{url}}api/admin/products/",
+            "url": "{{url}}api/products?colors=&sizes=&minPrice=0&maxPrice=5000&minDiscount=0&category=&stock=&sort=&pageNumber=0&pageSize=10",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-12-08T07:06:21.255Z",
+            "modified": "2023-12-08T07:37:28.259Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "colors",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "sizes",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "minPrice",
+                    "value": "0",
+                    "isPath": false
+                },
+                {
+                    "name": "maxPrice",
+                    "value": "5000",
+                    "isPath": false
+                },
+                {
+                    "name": "minDiscount",
+                    "value": "0",
+                    "isPath": false
+                },
+                {
+                    "name": "category",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "stock",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "sort",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "pageNumber",
+                    "value": "0",
+                    "isPath": false
+                },
+                {
+                    "name": "pageSize",
+                    "value": "10",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n        \"imageUrl\": \"https://rukminim1.flixcart.com/image/612/612/xif0q/dress/a/x/z/l-na-awd-19-yellow-aarvia-original-imagzffm3bkyzup2.jpeg?q=70\",\r\n        \"brand\": \"Aarvia\",\r\n        \"title\": \"Women Bodycon Yellow Dress\",\r\n        \"color\": \"yellow\",\r\n        \"discountedPrice\": 699,\r\n        \"price\": 1999,\r\n        \"discountPersent\": 65,\r\n        \"size\": [\r\n            {\r\n              \"name\": \"S\",\r\n              \"quantity\": 20\r\n            },\r\n            {\r\n              \"name\": \"M\",\r\n              \"quantity\": 30\r\n            },\r\n            {\r\n              \"name\": \"L\",\r\n              \"quantity\": 50\r\n            }\r\n          ],\r\n          \"quantity\": 100,\r\n          \"topLevelCategory\": \"Women\",\r\n          \"secondLevelCategory\": \"Clothing\",\r\n          \"thirdLevelCategory\": \"women_dress\",\r\n          \"description\":\"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style.\"\r\n    }",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{jwt}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "8a3604a6-dc3e-4ceb-be36-40d2c6d84357",
+            "colId": "012c2899-9168-4c23-b3a3-4c37bc2951ba",
+            "containerId": "",
+            "name": "{{url}}api/admin/products/",
+            "url": "{{url}}api/admin/products/3/update",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2023-12-08T07:17:01.871Z",
+            "modified": "2023-12-08T07:17:01.871Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"imageUrl\": \"https://rukminim1.flixcart.com/image/612/612/k4d27ww0/shirt/q/w/t/l-el024-el-senor-original-imafnadnjp5pq6tg.jpeg?q=70\",\n  \"brand\": \"El Senor\",\n  \"Category\": \"mens_shirt\",\n  \"title\": \"Men Regular Formal Shirt\",\n  \"color\": \"black\",\n  \"discountedPrice\": 299,\n  \"price\": 1299,\n  \"discountPersent\": 76,\n  \"size\": [\n    {\n      \"name\": \"S\",\n      \"quantity\": 20\n    },\n    {\n      \"name\": \"M\",\n      \"quantity\": 30\n    },\n    {\n      \"name\": \"L\",\n      \"quantity\": 50\n    }\n  ],\n  \"quantity\": 1000,\n  \"topLevelCategory\": \"Men\",\n  \"secondLevelCategory\": \"Clothing\",\n  \"thirdLevelCategory\": \"shirt\",\n  \"description\": \"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style.\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{jwt}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "4e37598e-356a-4a48-9070-ab8ba4ddf069",
+            "colId": "012c2899-9168-4c23-b3a3-4c37bc2951ba",
+            "containerId": "",
+            "name": "{{url}}api/admin/products/",
+            "url": "{{url}}api/admin/products/",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-12-08T07:42:01.914Z",
+            "modified": "2023-12-08T07:42:01.914Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": " {\r\n        \"imageUrl\": \"https://rukminim1.flixcart.com/image/612/612/kggviq80-0/jean/d/j/v/30-xj-37-gry-30-zxn-clothing-original-imafwp9gnqtwwebg.jpeg?q=70\",\r\n        \"brand\": \"A C CREATION\",\r\n        \"title\": \"Women Slim Mid Rise Grey Jeans\",\r\n        \"color\": \"gray\",\r\n        \"discountedPrice\": 474,\r\n        \"price\": 1399,\r\n        \"discountPersent\": 66 ,\r\n        \"size\": [\r\n            {\r\n              \"name\": \"S\",\r\n              \"quantity\": 20\r\n            },\r\n            {\r\n              \"name\": \"M\",\r\n              \"quantity\": 30\r\n            },\r\n            {\r\n              \"name\": \"L\",\r\n              \"quantity\": 50\r\n            }\r\n          ],\r\n          \"quantity\": 100,\r\n          \"topLevelCategory\": \"Women\",\r\n          \"secondLevelCategory\": \"Clothing\",\r\n          \"thirdLevelCategory\": \"women_jeans\",\r\n          \"description\":\"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style.\"\r\n    }",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{jwt}}"
+            },
+            "tests": []
+        }
+    ]
+}

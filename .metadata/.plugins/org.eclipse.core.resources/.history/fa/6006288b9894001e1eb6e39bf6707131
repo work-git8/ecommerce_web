@@ -1,0 +1,6 @@
+package com.work.service;
+
+@Service
+public class RatingService {
+
+}

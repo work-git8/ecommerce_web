@@ -1,0 +1,50 @@
+package com.work.service;
+
+import org.springframework.stereotype.Service;
+
+import com.work.exception.ProductException;
+import com.work.model.Cart;
+import com.work.model.Product;
+import com.work.model.User;
+import com.work.repository.CartRepository;
+import com.work.request.AddItemRequest;
+
+@Service
+public class CartServiceImplementation implements CartService{
+	
+	private CartRepository cartRepository;
+	private CartItemService cartItemService;
+	private ProductService productService;
+	
+	
+	public CartServiceImplementation(CartRepository cartRepository,CartItemService cartItemService,ProductService productService) {
+		this.cartRepository = cartRepository;
+		this.cartItemService = cartItemService;
+		this.productService = productService;
+	}
+
+	@Override
+	public Cart createCart(User user) {
+		
+		Cart cart = new Cart();
+		cart.setUser(user);
+		
+		return cartRepository.save(cart);
+	}
+
+	@Override
+	public String addCartItem(Long userId, AddItemRequest req) throws ProductException {
+		
+		Cart cart = cartRepository.findByUserId(userId);
+		Product product = productService.findProductById(req.getProductId());
+		
+		return null;
+	}
+
+	@Override
+	public Cart findUserCart(Long userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.work.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.work.service.RatingService;
+import com.work.service.UserService;
+
+@RestController
+@RequestMapping("/api/rating")
+public class RatingController {
+
+	@Autowired
+	private UserService userService;
+	
+	@Autowired
+	private RatingService ratingService;
+	
+	
+}

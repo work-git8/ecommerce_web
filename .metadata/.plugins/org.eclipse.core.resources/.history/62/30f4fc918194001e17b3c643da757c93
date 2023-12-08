@@ -1,0 +1,28 @@
+package com.work.service;
+
+import com.work.exception.ProductException;
+import com.work.model.Cart;
+import com.work.model.User;
+import com.work.request.AddItemRequest;
+
+public class CartServiceImplementation implements CartItemService{
+
+	@Override
+	public Cart createCart(User user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String addCartItem(Long userId, AddItemRequest req) throws ProductException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Cart findUserCart(Long userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

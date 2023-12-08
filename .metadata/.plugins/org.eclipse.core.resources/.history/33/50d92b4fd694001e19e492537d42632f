@@ -1,0 +1,19 @@
+package com.work.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.work.service.ProductService;
+
+@RestController
+@RequestMapping("/api/cart")
+@Tag(name="Cart Management", description="find user cart, add item to cart")
+public class CartController {
+
+	@Autowired
+	private CartService cartService;
+	
+	@Autowired
+	private UserService userService;
+}
